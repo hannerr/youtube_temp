@@ -1,0 +1,35 @@
+/*cookie consent overlay and button stuff*/
+button, span {
+    min-width: 200px;
+    min-height: 40px;
+    border-radius: 10px;
+    margin: 1rem 0;
+    cursor: pointer;
+    border:none;
+}
+.darkBtn { 
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+}
+.lightBtn, label {
+    color:white;
+    background-color: unset;
+    margin: 0 auto;
+}
+.lightBtn {
+    border: 1px solid white;
+}
+.consent-overlay {
+    background-color: black;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    display: none;
+}
+.noconsent {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;  
+}
