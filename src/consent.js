@@ -2,13 +2,14 @@
 const consentOverlay = document.querySelector(".consent-overlay");
 const acceptCookie = document.querySelector(".acceptCookie");
 const rejectCookie = document.querySelector(".rejectCookie");
+let geturl = document.querySelector(".geturl");
 //show iframe when cookie is set
 let ytsource = "";
-function getUrl() {
+geturl.addEventListener("click", function() {
     ytsource = "https://www.youtube.com/embed/" + document.getElementById("ytsource").value;  
     document.querySelector("iframe").setAttribute("src", ytsource);
     document.querySelector(".ytIframe").style.display= "block";      
-}
+});
 
 document.addEventListener("DOMContentLoaded", function() {
     if (document.cookie.length!=0) {
